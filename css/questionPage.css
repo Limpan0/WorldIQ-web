@@ -2,11 +2,15 @@ html,
 body,
 button {
     margin: 0;
-    height: 573px;
     font-family: 'Quicksand', sans-serif;
     overflow-y: hidden;
     color: #081C15;
+    display: flex;
+    align-content: center;
 }
+
+body {
+    background-color: #1d1e1e;
 
 * {
     cursor: url("../images/navigation.png"), auto;
@@ -20,7 +24,8 @@ hr {
 
 #gameContainer {
     display: grid;
-    height: 100%;
+    height: 600px;
+    width: 800px;
     background-color: #52B788;
     grid-template-columns: 80% 20%;
     grid-template-rows: 8% 15% 37% 40%;

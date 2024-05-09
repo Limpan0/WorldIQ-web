@@ -2,8 +2,13 @@ html,
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-self: center;
+}
 
-
+body {
+    width: 800px;
+    height: 600px;
 }
 
 * {

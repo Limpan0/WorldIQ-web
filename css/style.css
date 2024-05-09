@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     display: flex;
-    align-self: center;
+    justify-content: center;
 }
 
 body {

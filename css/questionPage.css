@@ -10,7 +10,7 @@ button {
 body {
     background-color: #52B788;
     display: flex;
-    align-content: center;
+    justify-content: center;
 }
 
 * {

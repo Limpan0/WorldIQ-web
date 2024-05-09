@@ -10,7 +10,7 @@ button {
 body {
     background-color: #52B788;
     display: flex;
-    justify-content: center;
+    align-content: center;
 }
 
 * {
@@ -66,8 +66,8 @@ h2 {
 }
 
 #backBtn {
-    position: relative;
-    left: -280px;
+    position: absolute;
+    left: 0px;
 }
 
 #questionContainer {
@@ -100,9 +100,9 @@ h2 {
 }
 
 #hintContainer i {
-    position: relative;
-    left: -200px;
-    top: -80px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
     scale: 1.5;
 }
 

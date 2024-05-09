@@ -5,12 +5,13 @@ button {
     font-family: 'Quicksand', sans-serif;
     overflow-y: hidden;
     color: #081C15;
-    display: flex;
-    align-content: center;
 }
 
 body {
-    background-color: #1d1e1e;
+    background-color: #52B788;
+    display: flex;
+    align-content: center;
+}
 
 * {
     cursor: url("../images/navigation.png"), auto;

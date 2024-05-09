@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+* {
+    cursor: url("../images/navigation.png"), auto;
+
+}
+
+p,
+button {
+    font-family: 'Quicksand', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #081C15;
+}
+
+body {
+    text-align: center;
+    background-image: radial-gradient(rgb(162, 230, 245), rgb(81, 160, 212));
+}
+
+h3 {
+    font-size: 50px;
+    margin: 10px;
+    color: #081C15;
+}
+
+#iq {
+    font-size: 70px;
+    color: #52b7a0;
+    font-weight: bolder;
+    text-shadow: 1px 0 0 #081C15, 0 1px 0 #081C15, -1px 0 0 #081C15, 0 -1px 0 #081C15;
+}
+
+#continentBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+#smallerText {
+    font-size: 14px;
+}
+
+.continentBtn {
+    background-color: white;
+    background-size: 100%;
+    background-position: center;
+    padding: 0;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+    height: 150px;
+    border: 0;
+    transition: 0.3s ease-out;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #0c5c70;
+}
+
+.continentBtn:hover {
+    scale: 0.96;
+    background-size: 93%;
+    box-shadow: none;
+}
+
+.continentBtn:active {
+    filter: brightness(1.25);
+}
+
+.continentBtn p {
+    background-color: rgba(203, 249, 231, 0.769);
+    border-radius: 5px;
+}
+
+.continentBtn:first-child {
+    background-image: url("../images/africa.jpg");
+}
+
+.continentBtn:nth-child(2) {
+    background-image: url("../images/americas.jpg");
+}
+
+.continentBtn:nth-child(3) {
+    background-image: url("../images/asia.jpg");
+}
+
+.continentBtn:nth-child(4) {
+    background-image: url("../images/europe.jpg");
+}
+
+.continentBtn:nth-child(5) {
+    background-image: url("../images/oceania.jpg");
+}
+
+#optionsContainer {
+    background: linear-gradient(180deg, rgb(39, 137, 228) 0%, rgb(39, 196, 240) 100%);
+    border: solid black 2px;
+    border-radius: 6px;
+    width: 75%;
+    height: 300px;
+    left: 12.5%;
+    top: 90px;
+    margin: auto;
+    position: absolute;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.btn {
+    background-color: rgb(239, 246, 251);
+    border: 0;
+    border-radius: 3px;
+    color: black;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    width: auto;
+    transition: all 0.1s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    scale: 0.96;
+}
+
+#title {
+    background-color: rgb(29, 175, 216);
+    margin: 0;
+    border-radius: 6px;
+
+}
+
+#closeBtn {
+    margin-top: -40px;
+
+    display: block;
+    z-index: 10;
+}
+
+#btnList {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 7px;
+}
+
+#btnList input {
+    margin-top: 15px;
+    font-size: large;
+    background-color: lightskyblue;
+}
+
+
+
+
+@keyframes fadeIn {
+
+    0% {
+        scale: 0.6;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

@@ -8,7 +8,7 @@ button {
 }
 
 body {
-    background-color: #52B788;
+    background-image: radial-gradient(rgb(162, 230, 245), rgb(81, 160, 212));
     display: flex;
     justify-content: center;
 }
@@ -24,6 +24,8 @@ hr {
 }
 
 #gameContainer {
+    margin-top: 2em;
+    border: #081C15 2px solid;
     display: grid;
     height: 600px;
     width: 800px;
@@ -59,15 +61,11 @@ h2 {
     background-color: #52B788;
     text-align: center;
     border-bottom: solid 1px #081C15;
+    position: relative;
 }
 
 #headerContainer h1 {
     margin: 0;
-}
-
-#backBtn {
-    position: absolute;
-    left: 0px;
 }
 
 #questionContainer {
@@ -79,14 +77,16 @@ h2 {
 }
 
 #loading {
-    position: absolute;
+    position: relative;
     z-index: 100;
-    left: 300px;
-    top: 200px;
+    top: 250px;
+    left: 350px;
 }
 
 #hintContainer {
+    position: relative;
     grid-area: hint;
+    width: 100%;
     background-color: #D8F3DC;
     display: flex;
     align-items: center;
@@ -100,9 +100,9 @@ h2 {
 }
 
 #hintContainer i {
-    position: absolute;
-    left: 20px;
-    top: 150px;
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
     scale: 1.5;
 }
 
@@ -198,6 +198,9 @@ h2 {
     scale: 1.8;
     color: rgb(163, 44, 44);
 }
+.displayAnswerContainer {
+    padding-bottom: 1em;
+}
 
 .outOfTime {
     background-color: #D8F3DC;
@@ -213,6 +216,7 @@ h2 {
 }
 
 .nextQBtn {
+    position: relative;
     background-color: white;
     border: solid 1px #081C15;
     padding: 10px;
@@ -231,10 +235,10 @@ h2 {
 }
 
 #backBtn {
-    height: 45px;
-    background-color: rgb(239, 246, 251);
+    position: absolute;
+    left: 0px;
+    height: 100%;
     border: 0;
-    color: #081C15;
     padding: 10px;
     font-size: medium;
     font-weight: bold;
@@ -244,7 +248,7 @@ h2 {
 
 #yesNoContainer {
     width: 80px;
-    height: 45px;
+    height: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -255,12 +259,8 @@ h2 {
 
 #yesNoContainer>* {
     z-index: 200;
-    background-color: rgb(239, 246, 251);
-    color: #081C15;
     border-width: 1px;
-    margin: 0;
     width: 40px;
-    height: 45px;
 }
 
 #backBtn:hover,
@@ -269,6 +269,7 @@ h2 {
 }
 
 #endBox {
+    position: relative;
     color: #081C15;
 }
 

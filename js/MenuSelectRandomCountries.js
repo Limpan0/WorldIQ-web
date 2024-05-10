@@ -13,8 +13,7 @@ var MenuSelectRandomCountries = function () {
      * @return {undefined}
      */
     this.randomCountries = function (countries) {
-        var countriesJSON = countries;
-        var countriesJSONCopy = countriesJSON;
+        var countriesJSONCopy = countries;
         var cLength = countriesJSONCopy.length;
         for (let i = 0; i < cLength; i++) {
             var r = Math.floor(Math.random() * countriesJSONCopy.length);
